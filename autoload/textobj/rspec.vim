@@ -49,26 +49,10 @@ function! s:select_i()
   return ['V', bi, ei]
 endfunction
 
-function! textobj#rspec#a_describe() abort
+function! textobj#rspec#a() abort
   return s:select_a()
 endfunction
 
-function! textobj#rspec#i_describe() abort
-  return s:select_i()
-endfunction
-
-function! textobj#rspec#a_context() abort
-  return s:select_a()
-endfunction
-
-function! textobj#rspec#i_context() abort
-  return s:select_i()
-endfunction
-
-function! textobj#rspec#a_it() abort
-  return s:select_a()
-endfunction
-
-function! textobj#rspec#i_it() abort
+function! textobj#rspec#i() abort
   return s:select_i()
 endfunction

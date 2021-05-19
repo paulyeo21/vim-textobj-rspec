@@ -6,27 +6,13 @@ if exists('g:loaded_textobj_rspec')
 endif
 
 call textobj#user#plugin('rspec', {
-      \ 'describe': {
+      \ 'func': {
       \   'sfile': expand('<sfile>:p'),
-      \   'select-a': 'ad',
-      \   'select-a-function': 'textobj#rspec#a_describe',
-      \   'select-i': 'id',
-      \   'select-i-function': 'textobj#rspec#i_describe',
-      \  },
-      \ 'context': {
-      \   'sfile': expand('<sfile>:p'),
-      \   'select-a': 'ac',
-      \   'select-a-function': 'textobj#rspec#a_context',
-      \   'select-i': 'ic',
-      \   'select-i-function': 'textobj#rspec#i_context',
-      \  },
-      \ 'it': {
-      \   'sfile': expand('<sfile>:p'),
-      \   'select-a': 'ai',
-      \   'select-a-function': 'textobj#rspec#a_it',
-      \   'select-i': 'ii',
-      \   'select-i-function': 'textobj#rspec#i_it',
-      \  },
-})
+      \   'select-a': 'af',
+      \   'select-a-function': 'textobj#rspec#a',
+      \   'select-i': 'if',
+      \   'select-i-function': 'textobj#rspec#i',
+      \ },
+      \ })
 
 let g:loaded_textobj_rspec = 1
